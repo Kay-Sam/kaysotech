@@ -575,19 +575,19 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 35px;
+    font-size: 43px;
     line-height: 36px;
     text-align: center;
   }
 
   #hero h2 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 
   #hero .hero-img img {
-    width: 80%;
+    width: 100%;
   }
 }
 
