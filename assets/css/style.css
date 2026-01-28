@@ -575,7 +575,7 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 43px;
+    font-size: 30px;
     line-height: 36px;
     text-align: center;
   }
@@ -587,13 +587,17 @@ h6 {
   }
 
   #hero .hero-img img {
-    width: 100%;
+    width: 10%;
+    height: 100%;
+
   }
 }
 
 @media (max-width: 575px) {
   #hero .hero-img img {
-    width: 100%;
+    width: 120%;
+    max-width: none;
+    margin-left: -30px;
   }
 }
 
