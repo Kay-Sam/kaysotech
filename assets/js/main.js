@@ -239,13 +239,25 @@
 const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
 
 dropdownLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', function (e) {
     if (document.body.classList.contains('mobile-nav-active')) {
-      e.preventDefault(); // prevent jumping
-      this.parentElement.classList.toggle('active'); // toggle submenu
+      e.preventDefault();
+
+      const parent = this.parentElement;
+
+      // close other open dropdowns
+      document.querySelectorAll('.navbar .dropdown.active').forEach(dropdown => {
+        if (dropdown !== parent) {
+          dropdown.classList.remove('active');
+        }
+      });
+
+      // toggle current dropdown
+      parent.classList.toggle('active');
     }
   });
 });
+
 
 // WhatsApp form submission
 document.getElementById("whatsapp-form").addEventListener("submit", function(e) {

@@ -173,6 +173,7 @@ h6 {
   border: 2px solid #213b52;
   z-index: 1;
   overflow: hidden;
+  
 }
 
 /* Snake-like line */
@@ -335,7 +336,7 @@ h6 {
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 500;
-    color: #1e476c;
+    color: #ffffff;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -412,7 +413,7 @@ h6 {
   background: #213b52;
   color: #fff;
   padding: 4px 25px 6px 25px;
-  margin-left: 30px;
+  margin-left: 5px;
   border-radius: 50px;
   border: 2px solid #213b52;
   z-index: 1;
@@ -511,6 +512,9 @@ h6 {
 
     float: right;
     margin-left: 5px;
+  }
+  .navbar .dropdown ul li a {
+    color: #fff;
   }
 }
 
@@ -776,13 +780,8 @@ section {
   background-size: cover;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  min-height: 400px;
-}
-
-@media (max-width: 667px) {
-  .about .image img {
-    max-width: 100%;
-  }
+  min-height: 300px;
+  margin: 15px;
 }
 
 /*--------------------------------------------------------------
