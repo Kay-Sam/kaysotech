@@ -259,29 +259,30 @@ dropdownLinks.forEach(link => {
 });
 
 
-// WhatsApp form submission
 document.getElementById("whatsapp-form").addEventListener("submit", function(e) {
-    e.preventDefault(); // Prevent normal form submission
+    e.preventDefault();
 
-    // Collect form values
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
-    const subject = document.getElementById("subject").value.trim();
+    const projectType = document.querySelector("[name='project_type']").value;
+    const developmentType = document.querySelector("[name='development_type']").value;
+    const budget = document.querySelector("[name='budget']").value;
+    const timeline = document.querySelector("[name='timeline']").value;
     const message = document.getElementById("message").value.trim();
 
-    // Build WhatsApp message (URL-encoded)
     const whatsappMessage = encodeURIComponent(
         `Hello Kaysotech Team,%0A%0A` +
         `*Name:* ${name}%0A` +
         `*Email:* ${email}%0A` +
-        `*Subject:* ${subject}%0A` +
-        `*Message:* ${message}`
+        `*Project Type:* ${projectType}%0A` +
+        `*Development Type:* ${developmentType}%0A` +
+        `*Budget:* ${budget}%0A` +
+        `*Timeline:* ${timeline}%0A%0A` +
+        `*Project Details:* ${message}`
     );
 
-    // Replace with your WhatsApp number (country code + number, no + or 0)
     const whatsappURL = `https://api.whatsapp.com/send?phone=2347053088651&text=${whatsappMessage}`;
 
-    // Open WhatsApp in new tab
     window.open(whatsappURL, "_blank");
 });
 
