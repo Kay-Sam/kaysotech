@@ -258,7 +258,6 @@ dropdownLinks.forEach(link => {
   });
 });
 
-
 document.getElementById("whatsapp-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -271,20 +270,27 @@ document.getElementById("whatsapp-form").addEventListener("submit", function(e) 
     const message = document.getElementById("message").value.trim();
 
     const whatsappMessage = encodeURIComponent(
-        `Hello Kaysotech Team,` +
-        `*Name:* ${name}` +
-        `*Email:* ${email}` +
-        `*Project Type:* ${projectType}` +
-        `*Development Type:* ${developmentType}` +
-        `*Budget:* ${budget}` +
-        `*Timeline:* ${timeline}` +
-        `*Project Details:* ${message}`
+`Hello Kaysotech Team 👋
+
+*New Project Request*
+
+*Name:* ${name}
+*Email:* ${email}
+
+*Project Type:* ${projectType}
+*Development Type:* ${developmentType}
+
+*Budget:* ${budget}
+*Timeline:* ${timeline}
+
+*Project Details:*
+${message}
+`
     );
 
     const whatsappURL = `https://api.whatsapp.com/send?phone=2347053088651&text=${whatsappMessage}`;
 
     window.open(whatsappURL, "_blank");
 });
-
 
 })()

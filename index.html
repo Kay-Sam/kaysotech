@@ -792,75 +792,85 @@ Each project reflects our commitment to modern technologies, responsive design, 
           </div>
 
          <div class="col-lg-6 mt-4 mt-lg-0">
-  <form id="whatsapp-form" class="php-email-form w-100 p-4 bg-light rounded shadow" data-aos="fade-up">
-    <!-- Form Header -->
-    <h5 class="mb-4 text-center">Get in Touch</h5>
+ <form id="whatsapp-form" class="php-email-form w-100 p-4 bg-light rounded shadow" data-aos="fade-up">
 
-    <!-- Name & Email -->
-    <div class="row">
-      <div class="col-md-6 form-group mb-3">
-        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-      </div>
-      <div class="col-md-6 form-group mb-3">
-        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-      </div>
+  <h5 class="mb-4 text-center">Get in Touch</h5>
+
+  <!-- Name & Email -->
+  <div class="row">
+    <div class="col-md-6 form-group mb-3">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
     </div>
 
-    <!-- Project Type -->
-    <div class="form-group mb-3">
-      <select class="form-control" name="project_type" required>
-        <option value="">What type of project do you want?</option>
-        <option>Business Website</option>
-        <option>E-commerce Website</option>
-        <option>Web Application</option>
-        <option>Mobile App</option>
-        <option>Custom Software</option>
-        <option>Landing Page</option>
-        <option>Others</option>
-      </select>
+    <div class="col-md-6 form-group mb-3">
+      <label for="email">Email Address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
     </div>
+  </div>
 
-    <!-- Development Type -->
-    <div class="form-group mb-3">
-      <select class="form-control" name="development_type" required>
-        <option value="">Preferred Development Type</option>
-        <option>Custom Code </option>
-        <option>No-Code </option>
-        <option>Not Sure - Need Advice</option>
-      </select>
-    </div>
+  <!-- Project Type -->
+  <div class="form-group mb-3">
+    <label>Project Type</label>
+    <select class="form-control" name="project_type" required>
+      <option value="">Select Project Type</option>
+      <option>Business Website</option>
+      <option>E-commerce Website</option>
+      <option>Web Application</option>
+      <option>Mobile App</option>
+      <option>Custom Software</option>
+      <option>Landing Page</option>
+      <option>Others</option>
+    </select>
+  </div>
 
-    <!-- Budget -->
-    <div class="form-group mb-3">
-      <select class="form-control" name="budget">
-        <option value="">Estimated Budget</option>
-        <option>₦50k - ₦100k</option>
-        <option>₦100k - ₦300k</option>
-        <option>₦300k - UPWARD</option>
-      </select>
-    </div>
+  <!-- Development Type -->
+  <div class="form-group mb-3">
+    <label>Preferred Development Type</label>
+    <select class="form-control" name="development_type" required>
+      <option value="">Select Development Type</option>
+      <option>Custom Code</option>
+      <option>No-Code</option>
+      <option>Not Sure - Need Advice</option>
+    </select>
+  </div>
 
-    <!-- Timeline -->
-    <div class="form-group mb-3">
-      <select class="form-control" name="timeline">
-        <option value="">Project Timeline</option>
-        <option>ASAP</option>
-        <option>1 Month</option>
-        <option>2-3 Months</option>
-        <option>Flexible</option>
-      </select>
-    </div>
+  <!-- Budget -->
+  <div class="form-group mb-3">
+    <label>Estimated Budget</label>
+    <select class="form-control" name="budget">
+      <option value="">Select Budget</option>
+      <option>₦50k - ₦100k</option>
+      <option>₦100k - ₦300k</option>
+      <option>₦300k - UPWARD</option>
+    </select>
+  </div>
 
-    <!-- Message -->
-    <div class="form-group mb-3">
-      <textarea class="form-control" name="message" id="message" rows="5" placeholder="Describe your project in details" required></textarea>
-    </div>
+  <!-- Timeline -->
+  <div class="form-group mb-3">
+    <label>Project Timeline</label>
+    <select class="form-control" name="timeline">
+      <option value="">Select Timeline</option>
+      <option>ASAP</option>
+      <option>1 Month</option>
+      <option>2-3 Months</option>
+      <option>Flexible</option>
+    </select>
+  </div>
 
-    <!-- Submit Button -->
-    <div class="text-center mt-3">
-      <button type="submit" class="btn btn-primary btn-lg w-100">Request a Quote</button>
-    </div>
-  </form>
+  <!-- Message -->
+  <div class="form-group mb-3">
+    <label for="message">Project Details</label>
+    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Describe your project in details" required></textarea>
+  </div>
+
+  <div class="text-center mt-3">
+    <button type="submit" class="btn btn-primary btn-lg w-100">
+      Start Your Project
+    </button>
+  </div>
+
+</form>
 </div>
 
 <style>
