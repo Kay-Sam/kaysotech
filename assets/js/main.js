@@ -271,13 +271,13 @@ document.getElementById("whatsapp-form").addEventListener("submit", function(e) 
     const message = document.getElementById("message").value.trim();
 
     const whatsappMessage = encodeURIComponent(
-        `Hello Kaysotech Team,%0A%0A` +
-        `*Name:* ${name}%0A` +
-        `*Email:* ${email}%0A` +
-        `*Project Type:* ${projectType}%0A` +
-        `*Development Type:* ${developmentType}%0A` +
-        `*Budget:* ${budget}%0A` +
-        `*Timeline:* ${timeline}%0A%0A` +
+        `Hello Kaysotech Team,` +
+        `*Name:* ${name}` +
+        `*Email:* ${email}` +
+        `*Project Type:* ${projectType}` +
+        `*Development Type:* ${developmentType}` +
+        `*Budget:* ${budget}` +
+        `*Timeline:* ${timeline}` +
         `*Project Details:* ${message}`
     );
 
