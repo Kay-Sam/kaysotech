@@ -122,12 +122,12 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
+  // on('click', '.navbar .dropdown > a', function(e) {
+  //   if (select('#navbar').classList.contains('navbar-mobile')) {
+  //     e.preventDefault()
+  //     this.nextElementSibling.classList.toggle('dropdown-active')
+  //   }
+  // }, true)
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -236,27 +236,27 @@
 
 
 // Mobile dropdown toggle
-const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
+// const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
 
-dropdownLinks.forEach(link => {
-  link.addEventListener('click', function (e) {
-    if (document.body.classList.contains('mobile-nav-active')) {
-      e.preventDefault();
+// dropdownLinks.forEach(link => {
+//   link.addEventListener('click', function (e) {
+//     if (document.body.classList.contains('mobile-nav-active')) {
+//       e.preventDefault();
 
-      const parent = this.parentElement;
+//       const parent = this.parentElement;
 
-      // close other open dropdowns
-      document.querySelectorAll('.navbar .dropdown.active').forEach(dropdown => {
-        if (dropdown !== parent) {
-          dropdown.classList.remove('active');
-        }
-      });
+//       // close other open dropdowns
+//       document.querySelectorAll('.navbar .dropdown.active').forEach(dropdown => {
+//         if (dropdown !== parent) {
+//           dropdown.classList.remove('active');
+//         }
+//       });
 
-      // toggle current dropdown
-      parent.classList.toggle('active');
-    }
-  });
-});
+//       // toggle current dropdown
+//       parent.classList.toggle('active');
+//     }
+//   });
+// });
 
 document.getElementById("whatsapp-form").addEventListener("submit", function(e) {
     e.preventDefault();
