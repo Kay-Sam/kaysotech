@@ -1593,3 +1593,252 @@ section {
   background: #4f46e5;
   color: #fff;
 }
+
+/* ===== Hero Section ===== */
+.services-hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/123.png') center/cover no-repeat;
+    color: #fff;
+    padding: 120px 0 80px;
+}
+
+.services-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.services-hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.breadcrumbs a {
+    color: #ffdd00;
+}
+
+.breadcrumbs {
+    font-size: 0.9rem;
+}
+
+/* ===== Services Grid ===== */
+.services .service-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+.services .service-item .icon {
+    font-size: 3rem;
+    color: #4a00e0;
+    margin-bottom: 15px;
+}
+
+.services .service-item h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.services .service-item p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.services .service-item .readmore {
+    color: #ffdd00;
+    font-weight: 600;
+}
+
+/* ===== Detailed Services ===== */
+/* Container spacing */
+.service-detail {
+    padding: 80px 0;
+}
+
+/* Row Flex Layout */
+.service-row {
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Images */
+.service-image img {
+    width: 90%;
+    max-width: 480px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+.service-image img:hover {
+    transform: scale(1.03);
+}
+
+
+
+/* Headings */
+.service-text{
+    padding-left: 40px;
+}
+@media (max-width: 991px){
+
+  .service-text{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+.service-text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #4a00e0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Paragraphs */
+.service-text p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Features List */
+.service-features{
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.service-features li{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+}
+
+.service-features li::before{
+  content: "✔";
+  color: #ffcc00;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.small-service-img{
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+}
+/* mobile improvement */
+@media (max-width:768px){
+
+  .service-text{
+    text-align: center;
+  }
+
+  .service-features li{
+    text-align: left;
+  }
+
+}
+/* Responsive Layout */
+@media (max-width: 991px) {
+    .service-row {
+        flex-direction: column !important;
+    }
+    .service-text h2,
+    .service-text p,
+    .service-features {
+        text-align: left;
+    }
+    .service-image img {
+        margin-bottom: 30px;
+    }
+    .service-text{
+   text-align:left;
+}
+
+  
+}
+
+/* ===== CTA Section ===== */
+.cta {
+    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 12px;
+    margin: 50px 0;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta .btn-get-started {
+    background: #ffffff;
+    color: #4a00e0;
+    padding: 12px 40px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.cta .btn-get-started:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .services-hero h1 {
+        font-size: 2rem;
+    }
+
+    .services-hero p {
+        font-size: 1rem;
+    }
+
+    .services .service-item {
+        padding: 20px 15px;
+    }
+    .service-image img{
+    width:100%;
+    max-width:100%;
+}
+
+}
+/* Modern Blue-Purple Gradient Button */
+.btn-services {
+    background: linear-gradient(90deg, #4a00e0, #8e2de2); /* blue to purple gradient */
+    color: #fff;
+    padding: 8px 13px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(74, 0, 224, 0.3);
+}
+
+.btn-services:hover {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0); /* reversed gradient on hover */
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(74, 0, 224, 0.4);
+    color: #fff;
+}
+
+.btn-services:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 4px 12px rgba(74, 0, 224, 0.2);
+}
