@@ -215,14 +215,16 @@
   /**
    * Animation on scroll
    */
-  window.addEventListener('load', () => {
+  // Expose an AOS initializer to be called after skeletons/critical resources finish
+  window.initAOS = function(){
+    if(typeof AOS === 'undefined') return;
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
       once: true,
       mirror: false
     });
-  });
+  }
 // whatsapp
   window.addEventListener('scroll', function () {
     const whatsappBtn = document.getElementById('whatsappBtn');
