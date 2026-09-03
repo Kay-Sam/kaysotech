@@ -70,17 +70,23 @@
    * Back to top button
    */
   let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
+  const whatsappBtn = document.getElementById('whatsappBtn')
+  const footer = document.getElementById('footer')
+
+  const toggleFloatingButtons = () => {
+    const footerVisible = footer && footer.getBoundingClientRect().top < window.innerHeight
+
+    if (backtotop) {
+      backtotop.classList.toggle('active', window.scrollY > 100 && !footerVisible)
     }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
+
+    if (whatsappBtn) {
+      whatsappBtn.style.display = window.scrollY > 250 && !footerVisible ? 'flex' : 'none'
+    }
   }
+
+  window.addEventListener('load', toggleFloatingButtons)
+  onscroll(document, toggleFloatingButtons)
 
 /**
    * Mobile nav toggle
@@ -225,18 +231,6 @@
       mirror: false
     });
   }
-// whatsapp
-  window.addEventListener('scroll', function () {
-    const whatsappBtn = document.getElementById('whatsappBtn');
-
-    if (window.scrollY > 250) {
-      whatsappBtn.style.display = 'flex'; 
-    } else {
-      whatsappBtn.style.display = 'none';
-    }
-  });
-
-
 // Mobile dropdown toggle
 // const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
 
