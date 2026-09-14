@@ -1,128 +1,133 @@
-
-(function() {
+(function () {
   "use strict";
 
   /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim()
+    el = el.trim();
     if (all) {
-      return [...document.querySelectorAll(el)]
+      return [...document.querySelectorAll(el)];
     } else {
-      return document.querySelector(el)
+      return document.querySelector(el);
     }
-  }
+  };
 
   /**
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
+    let selectEl = select(el, all);
     if (selectEl) {
       if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
+        selectEl.forEach((e) => e.addEventListener(type, listener));
       } else {
-        selectEl.addEventListener(type, listener)
+        selectEl.addEventListener(type, listener);
       }
     }
-  }
+  };
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
+    el.addEventListener("scroll", listener);
+  };
 
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select('#navbar .scrollto', true)
+  let navbarlinks = select("#navbar .scrollto", true);
   const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
+    let position = window.scrollY + 200;
+    navbarlinks.forEach((navbarlink) => {
+      if (!navbarlink.hash) return;
+      let section = select(navbarlink.hash);
+      if (!section) return;
+      if (
+        position >= section.offsetTop &&
+        position <= section.offsetTop + section.offsetHeight
+      ) {
+        navbarlink.classList.add("active");
       } else {
-        navbarlink.classList.remove('active')
+        navbarlink.classList.remove("active");
       }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+    });
+  };
+  window.addEventListener("load", navbarlinksActive);
+  onscroll(document, navbarlinksActive);
 
   /**
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let elementPos = select(el).offsetTop
+    let elementPos = select(el).offsetTop;
     window.scrollTo({
       top: elementPos,
-      behavior: 'smooth'
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
-  const whatsappBtn = document.getElementById('whatsappBtn')
-  const footer = document.getElementById('footer')
+  let backtotop = select(".back-to-top");
+  const whatsappBtn = document.getElementById("whatsappBtn");
+  const footer = document.getElementById("footer");
 
   const toggleFloatingButtons = () => {
-    const footerVisible = footer && footer.getBoundingClientRect().top < window.innerHeight
+    const footerVisible =
+      footer && footer.getBoundingClientRect().top < window.innerHeight;
 
     if (backtotop) {
-      backtotop.classList.toggle('active', window.scrollY > 100 && !footerVisible)
+      backtotop.classList.toggle(
+        "active",
+        window.scrollY > 100 && !footerVisible,
+      );
     }
 
     if (whatsappBtn) {
-      whatsappBtn.style.display = window.scrollY > 250 && !footerVisible ? 'flex' : 'none'
+      whatsappBtn.style.display =
+        window.scrollY > 250 && !footerVisible ? "flex" : "none";
     }
-  }
+  };
 
-  window.addEventListener('load', toggleFloatingButtons)
-  onscroll(document, toggleFloatingButtons)
+  window.addEventListener("load", toggleFloatingButtons);
+  onscroll(document, toggleFloatingButtons);
 
-/**
+  /**
    * Mobile nav toggle
    */
-  const mobileNavShow = document.querySelector('.mobile-nav-show');
-  const mobileNavHide = document.querySelector('.mobile-nav-hide');
+  const mobileNavShow = document.querySelector(".mobile-nav-show");
+  const mobileNavHide = document.querySelector(".mobile-nav-hide");
 
-  document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
-    el.addEventListener('click', function(event) {
+  document.querySelectorAll(".mobile-nav-toggle").forEach((el) => {
+    el.addEventListener("click", function (event) {
       event.preventDefault();
       mobileNavToogle();
-    })
+    });
   });
 
   function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavShow.classList.toggle('d-none');
-    mobileNavHide.classList.toggle('d-none');
+    document.querySelector("body").classList.toggle("mobile-nav-active");
+    mobileNavShow.classList.toggle("d-none");
+    mobileNavHide.classList.toggle("d-none");
   }
 
   /**
    * Hide mobile nav on same-page/hash links
    */
-  document.querySelectorAll('#navbar a').forEach(navbarlink => {
-
+  document.querySelectorAll("#navbar a").forEach((navbarlink) => {
     if (!navbarlink.hash) return;
 
     let section = document.querySelector(navbarlink.hash);
     if (!section) return;
 
-    navbarlink.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
+    navbarlink.addEventListener("click", () => {
+      if (document.querySelector(".mobile-nav-active")) {
         mobileNavToogle();
       }
     });
-
   });
 
   /**
@@ -138,28 +143,33 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
+  on(
+    "click",
+    ".scrollto",
+    function (e) {
+      if (select(this.hash)) {
+        e.preventDefault();
 
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        let navbar = select("#navbar");
+        if (navbar.classList.contains("navbar-mobile")) {
+          navbar.classList.remove("navbar-mobile");
+          let navbarToggle = select(".mobile-nav-toggle");
+          navbarToggle.classList.toggle("bi-list");
+          navbarToggle.classList.toggle("bi-x");
+        }
+        scrollto(this.hash);
       }
-      scrollto(this.hash)
-    }
-  }, true)
+    },
+    true,
+  );
 
   /**
    * Scroll with ofset on page load with hash links in the url
    */
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     if (window.location.hash) {
       if (select(window.location.hash)) {
-        scrollto(window.location.hash)
+        scrollto(window.location.hash);
       }
     }
   });
@@ -167,106 +177,115 @@
   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+  window.addEventListener("load", () => {
+    let portfolioContainer = select(".portfolio-container");
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        itemSelector: ".portfolio-item",
+        layoutMode: "fitRows",
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let portfolioFilters = select("#portfolio-flters li", true);
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
+      on(
+        "click",
+        "#portfolio-flters li",
+        function (e) {
+          e.preventDefault();
+          portfolioFilters.forEach(function (el) {
+            el.classList.remove("filter-active");
+          });
+          this.classList.add("filter-active");
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
+          portfolioIsotope.arrange({
+            filter: this.getAttribute("data-filter"),
+          });
+          portfolioIsotope.on("arrangeComplete", function () {
+            AOS.refresh();
+          });
+        },
+        true,
+      );
     }
-
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+    selector: ".portfolio-lightbox",
   });
 
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper(".portfolio-details-slider", {
     speed: 400,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
   });
 
   /**
    * Animation on scroll
    */
   // Expose an AOS initializer to be called after skeletons/critical resources finish
-  window.initAOS = function(){
-    if(typeof AOS === 'undefined') return;
+  window.initAOS = function () {
+    if (typeof AOS === "undefined") return;
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
       once: true,
-      mirror: false
+      mirror: false,
     });
-  }
-// Mobile dropdown toggle
-// const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
+  };
+  window.addEventListener("load", window.initAOS, { once: true });
+  // Mobile dropdown toggle
+  // const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
 
-// dropdownLinks.forEach(link => {
-//   link.addEventListener('click', function (e) {
-//     if (document.body.classList.contains('mobile-nav-active')) {
-//       e.preventDefault();
+  // dropdownLinks.forEach(link => {
+  //   link.addEventListener('click', function (e) {
+  //     if (document.body.classList.contains('mobile-nav-active')) {
+  //       e.preventDefault();
 
-//       const parent = this.parentElement;
+  //       const parent = this.parentElement;
 
-//       // close other open dropdowns
-//       document.querySelectorAll('.navbar .dropdown.active').forEach(dropdown => {
-//         if (dropdown !== parent) {
-//           dropdown.classList.remove('active');
-//         }
-//       });
+  //       // close other open dropdowns
+  //       document.querySelectorAll('.navbar .dropdown.active').forEach(dropdown => {
+  //         if (dropdown !== parent) {
+  //           dropdown.classList.remove('active');
+  //         }
+  //       });
 
-//       // toggle current dropdown
-//       parent.classList.toggle('active');
-//     }
-//   });
-// });
+  //       // toggle current dropdown
+  //       parent.classList.toggle('active');
+  //     }
+  //   });
+  // });
 
-document.getElementById("whatsapp-form").addEventListener("submit", function(e) {
-    e.preventDefault();
+  document
+    .getElementById("whatsapp-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const projectType = document.querySelector("[name='project_type']").value;
-    const developmentType = document.querySelector("[name='development_type']").value;
-    const budget = document.querySelector("[name='budget']").value;
-    const timeline = document.querySelector("[name='timeline']").value;
-    const message = document.getElementById("message").value.trim();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const projectType = document.querySelector("[name='project_type']").value;
+      const developmentType = document.querySelector(
+        "[name='development_type']",
+      ).value;
+      const budget = document.querySelector("[name='budget']").value;
+      const timeline = document.querySelector("[name='timeline']").value;
+      const message = document.getElementById("message").value.trim();
 
-    const whatsappMessage = encodeURIComponent(
-`Hello Kaysotech Team 👋
+      const whatsappMessage = encodeURIComponent(
+        `Hello Kaysotech Team 👋
 
 *New Project Request*
 
@@ -281,12 +300,11 @@ document.getElementById("whatsapp-form").addEventListener("submit", function(e) 
 
 *Project Details:*
 ${message}
-`
-    );
+`,
+      );
 
-    const whatsappURL = `https://api.whatsapp.com/send?phone=2347053088651&text=${whatsappMessage}`;
+      const whatsappURL = `https://api.whatsapp.com/send?phone=2347053088651&text=${whatsappMessage}`;
 
-    window.open(whatsappURL, "_blank");
-});
-
-})()
+      window.open(whatsappURL, "_blank");
+    });
+})();
