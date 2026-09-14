@@ -245,7 +245,6 @@
       mirror: false,
     });
   };
-  window.addEventListener("load", window.initAOS, { once: true });
   // Mobile dropdown toggle
   // const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
 
