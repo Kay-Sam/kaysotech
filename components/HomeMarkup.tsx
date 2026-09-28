@@ -1,0 +1,874 @@
+export default function Markup() {
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `<!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+<a href="#" class="logo d-flex align-items-center">
+  <img src="assets/img/webp/LOGO-.webp" alt="Kaysotech Logo" height="150px">
+</a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown"><a href="/services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#services">Custom Web Design</a></li></li>
+              <li><a href="#services">Web development</a></li>
+              <li><a href="#services">E-commerce Solutions</a></li>
+              <li><a href="#services">Training & Mentorship</a></li>
+            </ul>
+          </li> 
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto"
+  href="https://wa.me/2347053088651?text=Hello%20there!%0AI%27m%20interested%20in%20your%20website%20development%20services.%0AI%20would%20like%20to%20know%20more%20about%20your%20pricing.%0AThank%20you."
+   target="_blank">
+   Get Started
+</a>
+</li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row d-flex align-items-center">
+      <div class="col-lg-6 py-5 py-lg-0 order-2 order-lg-1">
+        <h1>From Sketch to Launch, We Code Your Dream</h1>
+        <h2>Your innovation deserves more than just an idea, let's build something real.</h2>
+        <a href="https://wa.me/2347053088651?text=Hello%20there!%0AI%27m%20interested%20in%20your%20website%20development%20services.%0AI%20would%20like%20to%20know%20more%20about%20your%20pricing.%0AThank%20you." class="btn-get-started" target="_blank" rel="noopener noreferrer">Get Started</a>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img">
+        <img src="/assets/img/webp/header-img-optimized.webp" width="900" height="852" class="img-fluid" alt="Kaysotech image" fetchpriority="high" loading="eager" decoding="async">
+      </div>
+    </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="image col-xl-5"><img src="/assets/img/webp/about-photo.webp" width="800" height="936" alt="Kaysotech team collaborating" loading="lazy" decoding="async"></div>
+          <div class="col-xl-7">
+            <div class="content d-flex flex-column justify-content-center ps-0 ps-xl-4">
+              <h3 data-aos="fade-in" data-aos-delay="100">The Power to Build is One Click Away.</h3>
+              <p data-aos="fade-in">
+                We don't just build websites — we bring bold ideas to life through technology. We are a dynamic team of creative designers and skilled developers passionate about crafting modern, high-performing digital experiences. <br>
+
+Our mission is simple: turn your vision into reality. Whether you're a startup, a growing business, or an individual with a powerful idea, we work closely with you to design and develop customized web solutions that truly make an impact.
+
+            
+              </p>
+              <div class="row gy-4 mt-3">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bi bi-code-slash"></i>
+                  <h4><a href="#">Agile Development</a></h4>
+                  <p>   Quick iterations, faster delivery, and constant client collaboration.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h4><a href="#">Scalable Websites</a></h4>
+                  <p>  Built to grow from landing pages to full platforms.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-laptop"></i>
+                  <h4><a href="#">Custom Designs</a></h4>
+                  <p>Every design is unique and tailored to your brand.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-lock"></i>
+                  <h4><a href="#">Security</a></h4>
+                  <p>Security measures to protect your data and your users' privacy.</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Services</h2>
+          <p data-aos="fade-in">We offer a complete range of web development services. Whether you're a startup, a growing business, or an individual looking to establish a digital presence, our team of skilled designers and developers are here to bring your vision to life. </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/webp/custom design.webp" alt="Custom Website Design" loading="lazy" decoding="async">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Custom Website Design</h5>
+                <p class="card-text">Beautiful, responsive, and modern website designs tailored to your brand.</p>
+                <div class="read-more"><a href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+website+development+services.%0AI+would+like+to+know+more+about+your+pricing.%0AThank+you.&type=phone_number&app_absent=0"><i class="bi bi-arrow-right"></i> Get Started</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/webp/code.webp" alt="Web development" loading="lazy" decoding="async">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Web Development</a></h5>
+                <p class="card-text">Full-stack development using the latest technologies to bring your website to life.</p>
+                <div class="read-more"><a href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+website+development+services.%0AI+would+like+to+know+more+about+your+pricing.%0AThank+you.&type=phone_number&app_absent=0"><i class="bi bi-arrow-right"></i> Get Started</a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/webp/header.webp" alt="E-Commerce" loading="lazy" decoding="async">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">E-Commerce Solutions</a></h5>
+                <p class="card-text">Build secure and scalable online stores with payment integration and product management.</p>
+                <div class="read-more"><a href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+website+development+services.%0AI+would+like+to+know+more+about+your+pricing.%0AThank+you.&type=phone_number&app_absent=0"><i class="bi bi-arrow-right"></i>  Get Started</a></div>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-6 d-flex" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/webp/img7.webp" alt="Websiter Redesign" loading="lazy" decoding="async">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Website Redesign & Revamp</a></h5>
+                <p class="card-text">Upgrade and modernize your outdated website for a better user experience and performance.</p>
+                <div class="read-more"><a href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+website+development+services.%0AI+would+like+to+know+more+about+your+pricing.%0AThank+you.&type=phone_number&app_absent=0"><i class="bi bi-arrow-right"></i>  Get Started</a></div>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-6 d-flex" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/webp/bb.webp" alt="Website Maintenance" loading="lazy" decoding="async">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Website Maintenance & Support</a></h5>
+                <p class="card-text">Ongoing support, updates, and troubleshooting to keep your site running smoothly</p>
+                <div class="read-more"><a href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+website+development+services.%0AI+would+like+to+know+more+about+your+pricing.%0AThank+you.&type=phone_number&app_absent=0"><i class="bi bi-arrow-right"></i>  Get Started</a></div>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-6 d-flex" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/webp/coding.webp" alt="Training" loading="lazy" decoding="async">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Training & Mentorship</a></h5>
+                <p class="card-text">One-on-one or group training sessions for individuals or teams who want to learn design, development, or website management.</p>
+                <div class="read-more"><a href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+Training/Mentorship.%0AI+would+like+to+know+more+about+your+pricing.%0AThank+you.&type=phone_number&app_absent=0"><i class="bi bi-arrow-right"></i>  Get Started</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    
+
+    <section id="portfolio" class="portfolio-section">
+  <div class="container">
+    <div class="portfolio-header" data-aos="fade-in">
+      <h2>Our Recent Work</h2>
+      <p class="portfolio-sub">Explore a selection of projects we've delivered across different industries and business needs.</p>
+    </div>
+
+    <div class="portfolio-grid" data-aos="fade-up">
+
+      
+
+      <div class="portfolio-card">
+        <a href="assets/img/webp/yusuff autos.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/yusuff autos.webp" alt="Yusuff Autos" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Yusuff Autos</h3>
+            <span class="portfolio-year">2026</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Automotive Dealership</span>
+                  <span class="tag">Web</span>
+          </div>
+          <a href="https://yusuffautos.com.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+    
+
+      <div class="portfolio-card">
+        <a href="assets/img/webp/quickflow.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/quickflow.webp" alt="Quickflow" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Quickflow</h3>
+            <span class="portfolio-year">2026</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Business Website</span>
+            <span class="tag">Generator Sales</span>
+          </div>
+          <a href="https://quickflowltd.com" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <a href="assets/img/webp/Victorious' Akara Chips project.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/Victorious' Akara Chips project.webp" alt="Victorious Chips" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Victorious Chips</h3>
+            <span class="portfolio-year">2025</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">E-commerce</span>
+            <span class="tag">Food Snacks</span>
+          </div>
+          <a href="https://victoriouschips.com.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+        <div class="portfolio-card">
+        <a href="assets/img/webp/peluola.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/peluola.webp" alt="Peluola Farms" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Peluola Farms</h3>
+            <span class="portfolio-year">2026</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Agriculture</span>
+                  <span class="tag">Web App</span>
+          </div>
+          <a href="https://peluolafarms.com.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+
+        <div class="portfolio-card">
+        <a href="assets/img/webp/oluwaseun enterprises.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/oluwaseun enterprises.webp" alt="Oluwaseun Enterprises" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Oluwaseun Enterprises</h3>
+            <span class="portfolio-year">2026</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Business Website</span><span class="tag">Construction</span>
+          </div>
+          <a href="https://oluwaseunenterprises.com.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <a href="assets/img/webp/SolaScent Perfume Store - Google Chrome 18_01_2026 20_26_30.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/SolaScent Perfume Store - Google Chrome 18_01_2026 20_26_30.webp" alt="SolaScent" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>SolaScent</h3>
+            <span class="portfolio-year">2025</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Perfume Store</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://solascent.name.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <a href="assets/img/webp/Olimpid.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/Olimpid.webp" alt="Olimpid" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Olimpid</h3>
+            <span class="portfolio-year">2026</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Travel Agency</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://olimpid.com.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <a href="assets/img/webp/Gene2612 - Farms and Agroservices -.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/Gene2612 - Farms and Agroservices -.webp" alt="Gene2612 Farms" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Gene2612 Farms</h3>
+            <span class="portfolio-year">2025</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Agriculture</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://gene2612farms.com.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+        <div class="portfolio-card">
+        <a href="assets/img/webp/mumsam.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/mumsam.webp" alt="Mummy Sam Kitchen" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Mummy Sam Kitchen</h3>
+            <span class="portfolio-year">2026</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Food</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://mummysamkitchen.com.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <a href="assets/img/webp/Artsok.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/Artsok.webp" alt="Artsok" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Artsok</h3>
+            <span class="portfolio-year">2025</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Artist</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://artsok.name.ng/" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+    
+      <div class="portfolio-card">
+        <a href="assets/img/webp/Solprint.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/Solprint.webp" alt="Solprint" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Solprint</h3>
+            <span class="portfolio-year">2025</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Printing Service</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://solprint.name.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <a href="assets/img/webp/Gymhouse -.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/Gymhouse -.webp" alt="Gymhouse" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Gymhouse</h3>
+            <span class="portfolio-year">2025</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Landing Page</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://gymhouse.vercel.app/" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <a href="assets/img/webp/faithub.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/faithub.webp" alt="Faithhub" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Faithhub</h3>
+            <span class="portfolio-year">2024</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Personal Website</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://faithhub.netlify.app/" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <a href="assets/img/webp/Youth Anniversary.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/Youth Anniversary.webp" alt="Event" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Youth Anniversary</h3>
+            <span class="portfolio-year">2024</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Church Event </span>
+            <span class="tag">Web App</span>
+          </div>
+          <a href="https://i-will-be-attending.onrender.com/" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+        <div class="portfolio-card">
+        <a href="assets/img/webp/He-benny Website.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/He-benny Website.webp" alt="He-benny" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>He-benny</h3>
+            <span class="portfolio-year">2021</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Art</span>
+            <span class="tag">Africa Tales</span>
+          </div>
+          <a href="https://hebenny.name.ng" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="cta-section">
+  <div class="container text-center">
+    
+    <h2>Ready to Build Your Website or App?</h2>
+    
+    <p>
+      Tell us about your project and get a tailored solution from Kaysotech.
+      We design and develop high-quality websites, web apps, and software.
+    </p>
+
+    <a href="https://api.whatsapp.com/send?phone=2347053088651&text=Hello,%2C%20I%20need%20a%20website%20%20%20" class="cta-btn" target="_blank">Start Your Project</a>
+
+  </div>
+</section>
+
+    <!-- ======= Pricing Section ======= > -->
+    <section id="pricing" class="pricing section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Pricing</h2>
+          <p data-aos="fade-in">Choose the Right Website Plan for Your Business.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 box" data-aos="zoom-in">
+            <h3>Starter </h3>
+            <h4><span>Range from #100k - #200k</span></h4>
+            <ul>
+              <li><i class="bi bi-check"></i> Up to 5 pages</li>
+              <li><i class="bi bi-check"></i> Responsive design</li>
+              <li><i class="bi bi-check"></i> Basic SEO</li>
+              <li><i class="bi bi-check"></i> Minimal, clean UI (template or semi-custom layout)</li>
+              <li class="na"><i class="bi bi-x-lg"></i> <span>Admin dashboard</span></li>
+              <li class="na"><i class="bi bi-x-lg"></i> <span>Payment integration</span></li>
+            </ul>
+            <a href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+Starter website package" class="get-started-btn" target="_blank">Get Started</a>
+          </div>
+
+          <div class="col-lg-4 box featured" data-aos="zoom-in">
+            <span class="featured-badge">Featured</span>
+            <h3>Business</h3>
+            <h4><span>Range from #200k - #500k</span></h4>
+            <ul>
+              <li><i class="bi bi-check"></i> Modern UI / custom design</li>
+              <li><i class="bi bi-check"></i> Up to 10 pages</li>
+              <li><i class="bi bi-check"></i> Payment integration</li>
+              <li><i class="bi bi-check"></i> Basic SEO</li>
+              <li><i class="bi bi-check"></i> Admin dashboard</li>
+              <li><i class="bi bi-check"></i> Custom Domain and Hosting</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+Business website package" class="get-started-btn" target="_blank">Get Started</a>
+          </div>
+
+          <div class="col-lg-4 box" data-aos="zoom-in">
+            <h3>Premium</h3>
+            <h4><span>Range from #500K - UPWARD</span></h4>
+            <ul>
+              <li><i class="bi bi-check"></i> Product management system</li>
+              <li><i class="bi bi-check"></i> E-commerce</li>
+              <li><i class="bi bi-check"></i> Advanced features (login system, reports, advanced animations)</li>
+              <li><i class="bi bi-check"></i> Payment Integration</li>
+              <li><i class="bi bi-check"></i> Advanced SEO setup</li>
+              <li><i class="bi bi-check"></i> Custom Domain and Hosting</li>
+              <li><i class="bi bi-check"></i> Maintenance</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+Premium website package" class="get-started-btn" target="_blank">Get Started</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+
+<!-- End Pricing Section -->
+ <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Frequently Asked Questions</h2>
+          <p data-aos="fade-in">We've answered some of the most common questions we get about our services, process, and how we work. If you still have a question, feel free to contact us directly.
+</p>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                   What services do you offer?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    We offer website design, full-stack development, UI/UX design, e-commerce solutions, website maintenance, and training for individuals or teams.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                     What technologies do you use?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                   We work with modern technologies like Wordpress, HTML5, CSS3, JavaScript,Typescript, Nextjs, React, Node, MongoDB, Ruby on Rails, Tailwind CSS, Python,Flask,Django, PHP, MySQL, PostgreSQL, and more depending on the project requirements.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How long does it take to complete a website?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    It depends on the complexity of the website. Simple websites take 1-2 weeks, while larger or custom web applications may take 3-6 weeks or more.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Can I update the website myself after it's built?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Yes. If needed, we provide user-friendly admin panels or CMS systems and also offer training on how to manage your content independently.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                     Do you offer post-launch support?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Absolutely. We offer maintenance, updates, bug fixing, and performance monitoring to ensure your website runs smoothly after launch.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How can I get started with you?
+                  </button>
+                </h3>
+                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Just reach out through our <a href="#contact">contact form</a>, WhatsApp button, or email. We'll be available to reply your messages.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+<p>
+  We'd love to hear from you! Whether you have a project idea, or just want to ask a few questions — our team is ready to help. Reach out to us anytime, and let's turn your vision into reality.
+</p>
+</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box" data-aos="fade-up">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Our Address</h3>
+                  <p>Olodo, Ibadan Oyo State</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p><a href="mailto:info@kaysotech.com.ng" style="color:#333;">info@kaysotech.com.ng</a></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p><a href="tel:07053088651" style="color: #333;">07053088651</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+         <div class="col-lg-6 mt-4 mt-lg-0">
+ <form id="whatsapp-form" action="https://wa.me/2347053088651?text=Hello%20Kaysotech%20Team" method="get" class="php-email-form w-100 p-4 bg-light rounded shadow" data-aos="fade-up">
+
+  <h5 class="mb-4 text-center">Get in Touch</h5>
+
+  <!-- Name & Email -->
+  <div class="row">
+    <div class="col-md-6 form-group mb-3">
+      <label for="name">Full Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+    </div>
+
+    <div class="col-md-6 form-group mb-3">
+      <label for="email">Email Address</label>
+      <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+    </div>
+  </div>
+
+  <!-- Project Type -->
+  <div class="form-group mb-3">
+    <label>Project Type</label>
+    <select class="form-control" id="project_type" required>
+      <option value="">Select Project Type</option>
+      <option>Business Website</option>
+      <option>E-commerce Website</option>
+      <option>Web Application</option>
+      <option>Mobile App</option>
+      <option>Custom Software</option>
+      <option>Landing Page</option>
+      <option>Others</option>
+    </select>
+  </div>
+
+  <!-- Development Type -->
+  <div class="form-group mb-3">
+    <label>Preferred Development Type</label>
+    <select class="form-control" id="development_type" required>
+      <option value="">Select Development Type</option>
+      <option>Custom Code</option>
+      <option>No-Code</option>
+      <option>Not Sure - Need Advice</option>
+    </select>
+  </div>
+
+  <!-- Budget -->
+  <div class="form-group mb-3">
+    <label>Estimated Budget</label>
+    <select class="form-control" id="budget">
+      <option value="">Select Budget</option>
+      <option>₦100k - ₦200k</option>
+      <option>₦200k - ₦500k</option>
+      <option>₦500k - UPWARD</option>
+    </select>
+  </div>
+
+  <!-- Timeline -->
+  <div class="form-group mb-3">
+    <label>Project Timeline</label>
+    <select class="form-control" id="timeline">
+      <option value="">Select Timeline</option>
+      <option>ASAP</option>
+      <option>1 Month</option>
+      <option>2-3 Months</option>
+      <option>Flexible</option>
+    </select>
+  </div>
+
+  <!-- Message -->
+  <div class="form-group mb-3">
+    <label for="message">Project Details</label>
+    <textarea class="form-control" id="message" rows="5" placeholder="Describe your project in details" required></textarea>
+  </div>
+
+  <div class="text-center mt-3">
+    <button type="submit" class="btn btn-primary btn-lg w-100">
+      Start Your Project
+    </button>
+  </div>
+
+</form>
+</div>
+
+<style>
+
+</style>
+
+          </div>
+
+        </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+   <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="/" class="logo d-flex align-items-center">
+            <span>Kaysotech</span>
+          </a>
+          <p> Your innovation deserves more than just an idea, let's build something real.</p>
+          <div class="social-links d-flex mt-4">
+        <a href="https://www.facebook.com/profile.php?id=61588617735888" class ="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/kaysotech?igsh=MWlhb2R1MDg3N3g=" class="instagram" target="_blank"><i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=2347053088651&text=Hello%2C%20I%20am%20contacting%20you%20from%20your%20website" class="whatsapp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/company/kaysotech/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="/services#webdesign">Web Design</a></li>
+            <li><a href="/services#webdevelopment">Web Development</a></li>
+            <li><a href="/services#training">Tutorial & Mentorship</a></li>
+            <li><a href="/services#ecommerce">E-commerce Solutions             
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Olodo, Ibadan Oyo State <br>
+            <strong>Phone:</strong><span><a href="tel:07053088651" class="tag"> 07053088651</a><br>
+            <strong >Email:</strong><a href="mailto:info@kaysotech.com.ng" class="tag"> info@kaysotech.com.ng</a><br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright  <strong><span>Kaysotech</span></strong>. All Rights Reserved. Privacy Policy
+      </div>
+
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+<a href="https://api.whatsapp.com/send?phone=2347053088651&text=Hello%2C%20I%20am%20contacting%20you%20from%20your%20website"
+   class="whatsapp-btn" 
+   id="whatsappBtn" 
+   target="_blank" 
+   title="Message us on WhatsApp">
+  <i class="bi bi-whatsapp"></i> Message Us
+</a>
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  
+  
+  
+  
+
+  <!-- Template Main JS File -->`,
+      }}
+    />
+  );
+}
