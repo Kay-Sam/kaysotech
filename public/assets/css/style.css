@@ -551,7 +551,7 @@ h6 {
 #hero h1 {
   margin: 0 0 15px 0;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 56px;
   color: #0c3458;
   font-family: var(--font-system);
@@ -625,7 +625,7 @@ h6 {
     margin-left: -45px;
   }
 }
-             
+
 @media (max-width: 320px) {
   #hero .hero-img img {
     width: 120%;
@@ -738,18 +738,12 @@ section {
 }
 
 .about .image {
-  position: relative;
-  border-radius: 20px;
+  height: 300px;
   min-height: 300px;
-  overflow: hidden;
-}
-
-.about .image img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  align-self: center;
+  background: url("../img/webp/about-photo.webp") center center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
 }
 
 @media (max-width: 580px) {

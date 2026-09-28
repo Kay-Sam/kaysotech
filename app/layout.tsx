@@ -49,7 +49,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="/assets/vendor/glightbox/css/glightbox.min.css"
         />
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/style.css?v=nextjs-fix-1" />
       </head>
       <body>{children}</body>
     </html>

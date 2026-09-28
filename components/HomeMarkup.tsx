@@ -65,7 +65,7 @@ export default function Markup() {
       <div class="container">
 
         <div class="row gy-4">
-          <div class="image col-xl-5"><img src="/assets/img/webp/about-photo.webp" width="800" height="936" alt="Kaysotech team collaborating" loading="lazy" decoding="async"></div>
+          <div class="image col-xl-5" role="img" aria-label="Kaysotech team collaborating"></div>
           <div class="col-xl-7">
             <div class="content d-flex flex-column justify-content-center ps-0 ps-xl-4">
               <h3 data-aos="fade-in" data-aos-delay="100">The Power to Build is One Click Away.</h3>

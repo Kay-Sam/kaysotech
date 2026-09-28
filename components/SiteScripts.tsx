@@ -97,7 +97,10 @@ ${getValue("message")}`;
           />
         </>
       )}
-      <Script src="/assets/js/main.js" strategy="afterInteractive" />
+      <Script
+        src="/assets/js/main.js?v=nextjs-fix-1"
+        strategy="afterInteractive"
+      />
     </>
   );
 }
