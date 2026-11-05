@@ -208,6 +208,23 @@ Our mission is simple: turn your vision into reality. Whether you're a startup, 
       
 
       <div class="portfolio-card">
+        <a href="assets/img/webp/Godswillcreations.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
+          <img src="assets/img/webp/Godswillcreations.webp" alt="Godswill Creations" loading="lazy" decoding="async">
+        </a>
+        <div class="portfolio-card-body">
+          <div class="portfolio-card-top">
+            <h3>Godswill Creations</h3>
+            <span class="portfolio-year">2026</span>
+          </div>
+          <div class="portfolio-tags">
+            <span class="tag">Business Website</span>
+                  <span class="tag">Web</span>
+          </div>
+          <a href="https://godswillcreations.com" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
         <a href="assets/img/webp/yusuff autos.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
           <img src="assets/img/webp/yusuff autos.webp" alt="Yusuff Autos" loading="lazy" decoding="async">
         </a>
@@ -378,7 +395,6 @@ Our mission is simple: turn your vision into reality. Whether you're a startup, 
         </div>
       </div>
 
-    
       <div class="portfolio-card">
         <a href="assets/img/webp/Solprint.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
           <img src="assets/img/webp/Solprint.webp" alt="Solprint" loading="lazy" decoding="async">
@@ -396,39 +412,7 @@ Our mission is simple: turn your vision into reality. Whether you're a startup, 
         </div>
       </div>
 
-      <div class="portfolio-card">
-        <a href="assets/img/webp/Gymhouse -.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
-          <img src="assets/img/webp/Gymhouse -.webp" alt="Gymhouse" loading="lazy" decoding="async">
-        </a>
-        <div class="portfolio-card-body">
-          <div class="portfolio-card-top">
-            <h3>Gymhouse</h3>
-            <span class="portfolio-year">2025</span>
-          </div>
-          <div class="portfolio-tags">
-            <span class="tag">Landing Page</span>
-            <span class="tag">Web</span>
-          </div>
-          <a href="https://gymhouse.vercel.app/" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
-        </div>
-      </div>
 
-      <div class="portfolio-card">
-        <a href="assets/img/webp/faithub.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
-          <img src="assets/img/webp/faithub.webp" alt="Faithhub" loading="lazy" decoding="async">
-        </a>
-        <div class="portfolio-card-body">
-          <div class="portfolio-card-top">
-            <h3>Faithhub</h3>
-            <span class="portfolio-year">2024</span>
-          </div>
-          <div class="portfolio-tags">
-            <span class="tag">Personal Website</span>
-            <span class="tag">Web</span>
-          </div>
-          <a href="https://faithhub.netlify.app/" target="_blank" class="visit-site">Visit Live Site <i class="bi bi-arrow-up-right"></i></a>
-        </div>
-      </div>
 
       <div class="portfolio-card">
         <a href="assets/img/webp/Youth Anniversary.webp" data-gallery="portfolioGallery" class="portfolio-thumb portfolio-lightbox">
